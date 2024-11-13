@@ -1,0 +1,1015 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/main/sarif-2.1/schema/sarif-schema-2.1.0.json",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "fullName": "Trivy Vulnerability Scanner",
+          "informationUri": "https://github.com/aquasecurity/trivy",
+          "name": "Trivy",
+          "rules": [
+            {
+              "id": "CVE-2023-45857",
+              "name": "LanguageSpecificPackageVulnerability",
+              "shortDescription": {
+                "text": "axios: exposure of confidential data stored in cookies"
+              },
+              "fullDescription": {
+                "text": "An issue discovered in Axios 1.5.1 inadvertently reveals the confidential XSRF-TOKEN stored in cookies by including it in the HTTP header X-XSRF-TOKEN for every request made to any host allowing attackers to view sensitive information."
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "helpUri": "https://avd.aquasec.com/nvd/cve-2023-45857",
+              "help": {
+                "text": "Vulnerability CVE-2023-45857\nSeverity: MEDIUM\nPackage: axios\nFixed Version: 1.6.0, 0.28.0\nLink: [CVE-2023-45857](https://avd.aquasec.com/nvd/cve-2023-45857)\nAn issue discovered in Axios 1.5.1 inadvertently reveals the confidential XSRF-TOKEN stored in cookies by including it in the HTTP header X-XSRF-TOKEN for every request made to any host allowing attackers to view sensitive information.",
+                "markdown": "**Vulnerability CVE-2023-45857**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|MEDIUM|axios|1.6.0, 0.28.0|[CVE-2023-45857](https://avd.aquasec.com/nvd/cve-2023-45857)|\n\nAn issue discovered in Axios 1.5.1 inadvertently reveals the confidential XSRF-TOKEN stored in cookies by including it in the HTTP header X-XSRF-TOKEN for every request made to any host allowing attackers to view sensitive information."
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "6.5",
+                "tags": [
+                  "vulnerability",
+                  "security",
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2024-45590",
+              "name": "LanguageSpecificPackageVulnerability",
+              "shortDescription": {
+                "text": "body-parser: Denial of Service Vulnerability in body-parser"
+              },
+              "fullDescription": {
+                "text": "body-parser is Node.js body parsing middleware. body-parser \u0026lt;1.20.3 is vulnerable to denial of service when url encoding is enabled. A malicious actor using a specially crafted payload could flood the server with a large number of requests, resulting in denial of service. This issue is patched in 1.20.3."
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://avd.aquasec.com/nvd/cve-2024-45590",
+              "help": {
+                "text": "Vulnerability CVE-2024-45590\nSeverity: HIGH\nPackage: body-parser\nFixed Version: 1.20.3\nLink: [CVE-2024-45590](https://avd.aquasec.com/nvd/cve-2024-45590)\nbody-parser is Node.js body parsing middleware. body-parser \u003c1.20.3 is vulnerable to denial of service when url encoding is enabled. A malicious actor using a specially crafted payload could flood the server with a large number of requests, resulting in denial of service. This issue is patched in 1.20.3.",
+                "markdown": "**Vulnerability CVE-2024-45590**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|HIGH|body-parser|1.20.3|[CVE-2024-45590](https://avd.aquasec.com/nvd/cve-2024-45590)|\n\nbody-parser is Node.js body parsing middleware. body-parser \u003c1.20.3 is vulnerable to denial of service when url encoding is enabled. A malicious actor using a specially crafted payload could flood the server with a large number of requests, resulting in denial of service. This issue is patched in 1.20.3."
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "7.5",
+                "tags": [
+                  "vulnerability",
+                  "security",
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2023-46233",
+              "name": "LanguageSpecificPackageVulnerability",
+              "shortDescription": {
+                "text": "crypto-js: PBKDF2 1,000 times weaker than specified in 1993 and 1.3M times weaker than current standard"
+              },
+              "fullDescription": {
+                "text": "crypto-js is a JavaScript library of crypto standards. Prior to version 4.2.0, crypto-js PBKDF2 is 1,000 times weaker than originally specified in 1993, and at least 1,300,000 times weaker than current industry standard. This is because it both defaults to SHA1, a cryptographic hash algorithm considered insecure since at least 2005, and defaults to one single iteration, a \u0026#39;strength\u0026#39; or \u0026#39;difficulty\u0026#39; value specified at 1,000 when specified in 1993. PBKDF2 relies on iteration count as a countermeasure to preimage and collision attacks. If used to protect passwords, the impact is high. If used to generate signatures, the impact is high. Version 4.2.0 contains a patch for this issue. As a workaround, configure crypto-js to use SHA256 with at least 250,000 iterations."
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://avd.aquasec.com/nvd/cve-2023-46233",
+              "help": {
+                "text": "Vulnerability CVE-2023-46233\nSeverity: CRITICAL\nPackage: crypto-js\nFixed Version: 4.2.0\nLink: [CVE-2023-46233](https://avd.aquasec.com/nvd/cve-2023-46233)\ncrypto-js is a JavaScript library of crypto standards. Prior to version 4.2.0, crypto-js PBKDF2 is 1,000 times weaker than originally specified in 1993, and at least 1,300,000 times weaker than current industry standard. This is because it both defaults to SHA1, a cryptographic hash algorithm considered insecure since at least 2005, and defaults to one single iteration, a 'strength' or 'difficulty' value specified at 1,000 when specified in 1993. PBKDF2 relies on iteration count as a countermeasure to preimage and collision attacks. If used to protect passwords, the impact is high. If used to generate signatures, the impact is high. Version 4.2.0 contains a patch for this issue. As a workaround, configure crypto-js to use SHA256 with at least 250,000 iterations.",
+                "markdown": "**Vulnerability CVE-2023-46233**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|CRITICAL|crypto-js|4.2.0|[CVE-2023-46233](https://avd.aquasec.com/nvd/cve-2023-46233)|\n\ncrypto-js is a JavaScript library of crypto standards. Prior to version 4.2.0, crypto-js PBKDF2 is 1,000 times weaker than originally specified in 1993, and at least 1,300,000 times weaker than current industry standard. This is because it both defaults to SHA1, a cryptographic hash algorithm considered insecure since at least 2005, and defaults to one single iteration, a 'strength' or 'difficulty' value specified at 1,000 when specified in 1993. PBKDF2 relies on iteration count as a countermeasure to preimage and collision attacks. If used to protect passwords, the impact is high. If used to generate signatures, the impact is high. Version 4.2.0 contains a patch for this issue. As a workaround, configure crypto-js to use SHA256 with at least 250,000 iterations."
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "9.1",
+                "tags": [
+                  "vulnerability",
+                  "security",
+                  "CRITICAL"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2024-21529",
+              "name": "LanguageSpecificPackageVulnerability",
+              "shortDescription": {
+                "text": "dset: Prototype Pollution"
+              },
+              "fullDescription": {
+                "text": "Versions of the package dset before 3.1.4 are vulnerable to Prototype Pollution via the dset function due improper user input sanitization. This vulnerability allows the attacker to inject malicious object property using the built-in Object property __proto__, which is recursively assigned to all the objects in the program."
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://avd.aquasec.com/nvd/cve-2024-21529",
+              "help": {
+                "text": "Vulnerability CVE-2024-21529\nSeverity: HIGH\nPackage: dset\nFixed Version: 3.1.4\nLink: [CVE-2024-21529](https://avd.aquasec.com/nvd/cve-2024-21529)\nVersions of the package dset before 3.1.4 are vulnerable to Prototype Pollution via the dset function due improper user input sanitization. This vulnerability allows the attacker to inject malicious object property using the built-in Object property __proto__, which is recursively assigned to all the objects in the program.",
+                "markdown": "**Vulnerability CVE-2024-21529**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|HIGH|dset|3.1.4|[CVE-2024-21529](https://avd.aquasec.com/nvd/cve-2024-21529)|\n\nVersions of the package dset before 3.1.4 are vulnerable to Prototype Pollution via the dset function due improper user input sanitization. This vulnerability allows the attacker to inject malicious object property using the built-in Object property __proto__, which is recursively assigned to all the objects in the program."
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "8.2",
+                "tags": [
+                  "vulnerability",
+                  "security",
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2024-43796",
+              "name": "LanguageSpecificPackageVulnerability",
+              "shortDescription": {
+                "text": "express: Improper Input Handling in Express Redirects"
+              },
+              "fullDescription": {
+                "text": "Express.js minimalist web framework for node. In express \u0026lt; 4.20.0, passing untrusted user input - even after sanitizing it - to response.redirect() may execute untrusted code. This issue is patched in express 4.20.0."
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "helpUri": "https://avd.aquasec.com/nvd/cve-2024-43796",
+              "help": {
+                "text": "Vulnerability CVE-2024-43796\nSeverity: MEDIUM\nPackage: express\nFixed Version: 4.20.0, 5.0.0\nLink: [CVE-2024-43796](https://avd.aquasec.com/nvd/cve-2024-43796)\nExpress.js minimalist web framework for node. In express \u003c 4.20.0, passing untrusted user input - even after sanitizing it - to response.redirect() may execute untrusted code. This issue is patched in express 4.20.0.",
+                "markdown": "**Vulnerability CVE-2024-43796**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|MEDIUM|express|4.20.0, 5.0.0|[CVE-2024-43796](https://avd.aquasec.com/nvd/cve-2024-43796)|\n\nExpress.js minimalist web framework for node. In express \u003c 4.20.0, passing untrusted user input - even after sanitizing it - to response.redirect() may execute untrusted code. This issue is patched in express 4.20.0."
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "5.0",
+                "tags": [
+                  "vulnerability",
+                  "security",
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2024-41818",
+              "name": "LanguageSpecificPackageVulnerability",
+              "shortDescription": {
+                "text": "fast-xml-parser: ReDOS at currency parsing in currency.js"
+              },
+              "fullDescription": {
+                "text": "fast-xml-parser is an open source, pure javascript xml parser. a ReDOS exists on currency.js. This vulnerability is fixed in 4.4.1."
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://avd.aquasec.com/nvd/cve-2024-41818",
+              "help": {
+                "text": "Vulnerability CVE-2024-41818\nSeverity: HIGH\nPackage: fast-xml-parser\nFixed Version: 4.4.1\nLink: [CVE-2024-41818](https://avd.aquasec.com/nvd/cve-2024-41818)\nfast-xml-parser is an open source, pure javascript xml parser. a ReDOS exists on currency.js. This vulnerability is fixed in 4.4.1.",
+                "markdown": "**Vulnerability CVE-2024-41818**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|HIGH|fast-xml-parser|4.4.1|[CVE-2024-41818](https://avd.aquasec.com/nvd/cve-2024-41818)|\n\nfast-xml-parser is an open source, pure javascript xml parser. a ReDOS exists on currency.js. This vulnerability is fixed in 4.4.1."
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "7.5",
+                "tags": [
+                  "vulnerability",
+                  "security",
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2024-4067",
+              "name": "LanguageSpecificPackageVulnerability",
+              "shortDescription": {
+                "text": "micromatch: vulnerable to Regular Expression Denial of Service"
+              },
+              "fullDescription": {
+                "text": "The NPM package `micromatch` prior to 4.0.8 is vulnerable to Regular Expression Denial of Service (ReDoS). The vulnerability occurs in `micromatch.braces()` in `index.js` because the pattern `.*` will greedily match anything. By passing a malicious payload, the pattern matching will keep backtracking to the input while it doesn\u0026#39;t find the closing bracket. As the input size increases, the consumption time will also increase until it causes the application to hang or slow down. There was a merged fix but further testing shows the issue persists. This issue should be mitigated by using a safe pattern that won\u0026#39;t start backtracking the regular expression due to greedy matching. This issue was fixed in version 4.0.8."
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "helpUri": "https://avd.aquasec.com/nvd/cve-2024-4067",
+              "help": {
+                "text": "Vulnerability CVE-2024-4067\nSeverity: MEDIUM\nPackage: micromatch\nFixed Version: 4.0.8\nLink: [CVE-2024-4067](https://avd.aquasec.com/nvd/cve-2024-4067)\nThe NPM package `micromatch` prior to 4.0.8 is vulnerable to Regular Expression Denial of Service (ReDoS). The vulnerability occurs in `micromatch.braces()` in `index.js` because the pattern `.*` will greedily match anything. By passing a malicious payload, the pattern matching will keep backtracking to the input while it doesn't find the closing bracket. As the input size increases, the consumption time will also increase until it causes the application to hang or slow down. There was a merged fix but further testing shows the issue persists. This issue should be mitigated by using a safe pattern that won't start backtracking the regular expression due to greedy matching. This issue was fixed in version 4.0.8.",
+                "markdown": "**Vulnerability CVE-2024-4067**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|MEDIUM|micromatch|4.0.8|[CVE-2024-4067](https://avd.aquasec.com/nvd/cve-2024-4067)|\n\nThe NPM package `micromatch` prior to 4.0.8 is vulnerable to Regular Expression Denial of Service (ReDoS). The vulnerability occurs in `micromatch.braces()` in `index.js` because the pattern `.*` will greedily match anything. By passing a malicious payload, the pattern matching will keep backtracking to the input while it doesn't find the closing bracket. As the input size increases, the consumption time will also increase until it causes the application to hang or slow down. There was a merged fix but further testing shows the issue persists. This issue should be mitigated by using a safe pattern that won't start backtracking the regular expression due to greedy matching. This issue was fixed in version 4.0.8."
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "5.3",
+                "tags": [
+                  "vulnerability",
+                  "security",
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2023-46298",
+              "name": "LanguageSpecificPackageVulnerability",
+              "shortDescription": {
+                "text": "Next.js missing cache-control header may lead to CDN caching empty reply"
+              },
+              "fullDescription": {
+                "text": "Next.js before 13.4.20-canary.13 lacks a cache-control header and thus empty prefetch responses may sometimes be cached by a CDN, causing a denial of service to all users requesting the same URL via that CDN."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "helpUri": "https://avd.aquasec.com/nvd/cve-2023-46298",
+              "help": {
+                "text": "Vulnerability CVE-2023-46298\nSeverity: LOW\nPackage: next\nFixed Version: 13.4.20-canary.13\nLink: [CVE-2023-46298](https://avd.aquasec.com/nvd/cve-2023-46298)\nNext.js before 13.4.20-canary.13 lacks a cache-control header and thus empty prefetch responses may sometimes be cached by a CDN, causing a denial of service to all users requesting the same URL via that CDN.",
+                "markdown": "**Vulnerability CVE-2023-46298**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|LOW|next|13.4.20-canary.13|[CVE-2023-46298](https://avd.aquasec.com/nvd/cve-2023-46298)|\n\nNext.js before 13.4.20-canary.13 lacks a cache-control header and thus empty prefetch responses may sometimes be cached by a CDN, causing a denial of service to all users requesting the same URL via that CDN."
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "2.0",
+                "tags": [
+                  "vulnerability",
+                  "security",
+                  "LOW"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2024-45296",
+              "name": "LanguageSpecificPackageVulnerability",
+              "shortDescription": {
+                "text": "path-to-regexp: Backtracking regular expressions cause ReDoS"
+              },
+              "fullDescription": {
+                "text": "path-to-regexp turns path strings into a regular expressions. In certain cases, path-to-regexp will output a regular expression that can be exploited to cause poor performance. Because JavaScript is single threaded and regex matching runs on the main thread, poor performance will block the event loop and lead to a DoS. The bad regular expression is generated any time you have two parameters within a single segment, separated by something that is not a period (.). For users of 0.1, upgrade to 0.1.10. All other users should upgrade to 8.0.0."
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://avd.aquasec.com/nvd/cve-2024-45296",
+              "help": {
+                "text": "Vulnerability CVE-2024-45296\nSeverity: HIGH\nPackage: path-to-regexp\nFixed Version: 1.9.0, 0.1.10, 8.0.0, 3.3.0, 6.3.0\nLink: [CVE-2024-45296](https://avd.aquasec.com/nvd/cve-2024-45296)\npath-to-regexp turns path strings into a regular expressions. In certain cases, path-to-regexp will output a regular expression that can be exploited to cause poor performance. Because JavaScript is single threaded and regex matching runs on the main thread, poor performance will block the event loop and lead to a DoS. The bad regular expression is generated any time you have two parameters within a single segment, separated by something that is not a period (.). For users of 0.1, upgrade to 0.1.10. All other users should upgrade to 8.0.0.",
+                "markdown": "**Vulnerability CVE-2024-45296**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|HIGH|path-to-regexp|1.9.0, 0.1.10, 8.0.0, 3.3.0, 6.3.0|[CVE-2024-45296](https://avd.aquasec.com/nvd/cve-2024-45296)|\n\npath-to-regexp turns path strings into a regular expressions. In certain cases, path-to-regexp will output a regular expression that can be exploited to cause poor performance. Because JavaScript is single threaded and regex matching runs on the main thread, poor performance will block the event loop and lead to a DoS. The bad regular expression is generated any time you have two parameters within a single segment, separated by something that is not a period (.). For users of 0.1, upgrade to 0.1.10. All other users should upgrade to 8.0.0."
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "7.5",
+                "tags": [
+                  "vulnerability",
+                  "security",
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2024-4367",
+              "name": "LanguageSpecificPackageVulnerability",
+              "shortDescription": {
+                "text": "Mozilla: Arbitrary JavaScript execution in PDF.js"
+              },
+              "fullDescription": {
+                "text": "A type check was missing when handling fonts in PDF.js, which would allow arbitrary JavaScript execution in the PDF.js context. This vulnerability affects Firefox \u0026lt; 126, Firefox ESR \u0026lt; 115.11, and Thunderbird \u0026lt; 115.11."
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://avd.aquasec.com/nvd/cve-2024-4367",
+              "help": {
+                "text": "Vulnerability CVE-2024-4367\nSeverity: HIGH\nPackage: pdfjs-dist\nFixed Version: 4.2.67\nLink: [CVE-2024-4367](https://avd.aquasec.com/nvd/cve-2024-4367)\nA type check was missing when handling fonts in PDF.js, which would allow arbitrary JavaScript execution in the PDF.js context. This vulnerability affects Firefox \u003c 126, Firefox ESR \u003c 115.11, and Thunderbird \u003c 115.11.",
+                "markdown": "**Vulnerability CVE-2024-4367**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|HIGH|pdfjs-dist|4.2.67|[CVE-2024-4367](https://avd.aquasec.com/nvd/cve-2024-4367)|\n\nA type check was missing when handling fonts in PDF.js, which would allow arbitrary JavaScript execution in the PDF.js context. This vulnerability affects Firefox \u003c 126, Firefox ESR \u003c 115.11, and Thunderbird \u003c 115.11."
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "8.0",
+                "tags": [
+                  "vulnerability",
+                  "security",
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2023-44270",
+              "name": "LanguageSpecificPackageVulnerability",
+              "shortDescription": {
+                "text": "An issue was discovered in PostCSS before 8.4.31. The vulnerability af ..."
+              },
+              "fullDescription": {
+                "text": "An issue was discovered in PostCSS before 8.4.31. The vulnerability affects linters using PostCSS to parse external untrusted CSS. An attacker can prepare CSS in such a way that it will contains parts parsed by PostCSS as a CSS comment. After processing by PostCSS, it will be included in the PostCSS output in CSS nodes (rules, properties) despite being included in a comment."
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "helpUri": "https://avd.aquasec.com/nvd/cve-2023-44270",
+              "help": {
+                "text": "Vulnerability CVE-2023-44270\nSeverity: MEDIUM\nPackage: postcss\nFixed Version: 8.4.31\nLink: [CVE-2023-44270](https://avd.aquasec.com/nvd/cve-2023-44270)\nAn issue was discovered in PostCSS before 8.4.31. The vulnerability affects linters using PostCSS to parse external untrusted CSS. An attacker can prepare CSS in such a way that it will contains parts parsed by PostCSS as a CSS comment. After processing by PostCSS, it will be included in the PostCSS output in CSS nodes (rules, properties) despite being included in a comment.",
+                "markdown": "**Vulnerability CVE-2023-44270**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|MEDIUM|postcss|8.4.31|[CVE-2023-44270](https://avd.aquasec.com/nvd/cve-2023-44270)|\n\nAn issue was discovered in PostCSS before 8.4.31. The vulnerability affects linters using PostCSS to parse external untrusted CSS. An attacker can prepare CSS in such a way that it will contains parts parsed by PostCSS as a CSS comment. After processing by PostCSS, it will be included in the PostCSS output in CSS nodes (rules, properties) despite being included in a comment."
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "5.3",
+                "tags": [
+                  "vulnerability",
+                  "security",
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2024-43799",
+              "name": "LanguageSpecificPackageVulnerability",
+              "shortDescription": {
+                "text": "send: Code Execution Vulnerability in Send Library"
+              },
+              "fullDescription": {
+                "text": "Send is a library for streaming files from the file system as a http response. Send passes untrusted user input to SendStream.redirect() which executes untrusted code. This issue is patched in send 0.19.0."
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "helpUri": "https://avd.aquasec.com/nvd/cve-2024-43799",
+              "help": {
+                "text": "Vulnerability CVE-2024-43799\nSeverity: MEDIUM\nPackage: send\nFixed Version: 0.19.0\nLink: [CVE-2024-43799](https://avd.aquasec.com/nvd/cve-2024-43799)\nSend is a library for streaming files from the file system as a http response. Send passes untrusted user input to SendStream.redirect() which executes untrusted code. This issue is patched in send 0.19.0.",
+                "markdown": "**Vulnerability CVE-2024-43799**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|MEDIUM|send|0.19.0|[CVE-2024-43799](https://avd.aquasec.com/nvd/cve-2024-43799)|\n\nSend is a library for streaming files from the file system as a http response. Send passes untrusted user input to SendStream.redirect() which executes untrusted code. This issue is patched in send 0.19.0."
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "5.0",
+                "tags": [
+                  "vulnerability",
+                  "security",
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2024-43800",
+              "name": "LanguageSpecificPackageVulnerability",
+              "shortDescription": {
+                "text": "serve-static: Improper Sanitization in serve-static"
+              },
+              "fullDescription": {
+                "text": "serve-static serves static files. serve-static passes untrusted user input - even after sanitizing it - to redirect() may execute untrusted code. This issue is patched in serve-static 1.16.0."
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "helpUri": "https://avd.aquasec.com/nvd/cve-2024-43800",
+              "help": {
+                "text": "Vulnerability CVE-2024-43800\nSeverity: MEDIUM\nPackage: serve-static\nFixed Version: 1.16.0, 2.1.0\nLink: [CVE-2024-43800](https://avd.aquasec.com/nvd/cve-2024-43800)\nserve-static serves static files. serve-static passes untrusted user input - even after sanitizing it - to redirect() may execute untrusted code. This issue is patched in serve-static 1.16.0.",
+                "markdown": "**Vulnerability CVE-2024-43800**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|MEDIUM|serve-static|1.16.0, 2.1.0|[CVE-2024-43800](https://avd.aquasec.com/nvd/cve-2024-43800)|\n\nserve-static serves static files. serve-static passes untrusted user input - even after sanitizing it - to redirect() may execute untrusted code. This issue is patched in serve-static 1.16.0."
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "5.0",
+                "tags": [
+                  "vulnerability",
+                  "security",
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2021-23358",
+              "name": "LanguageSpecificPackageVulnerability",
+              "shortDescription": {
+                "text": "nodejs-underscore: Arbitrary code execution via the template function"
+              },
+              "fullDescription": {
+                "text": "The package underscore from 1.13.0-0 and before 1.13.0-2, from 1.3.2 and before 1.12.1 are vulnerable to Arbitrary Code Injection via the template function, particularly when a variable property is passed as an argument as it is not sanitized."
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://avd.aquasec.com/nvd/cve-2021-23358",
+              "help": {
+                "text": "Vulnerability CVE-2021-23358\nSeverity: CRITICAL\nPackage: underscore\nFixed Version: 1.12.1\nLink: [CVE-2021-23358](https://avd.aquasec.com/nvd/cve-2021-23358)\nThe package underscore from 1.13.0-0 and before 1.13.0-2, from 1.3.2 and before 1.12.1 are vulnerable to Arbitrary Code Injection via the template function, particularly when a variable property is passed as an argument as it is not sanitized.",
+                "markdown": "**Vulnerability CVE-2021-23358**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|CRITICAL|underscore|1.12.1|[CVE-2021-23358](https://avd.aquasec.com/nvd/cve-2021-23358)|\n\nThe package underscore from 1.13.0-0 and before 1.13.0-2, from 1.3.2 and before 1.12.1 are vulnerable to Arbitrary Code Injection via the template function, particularly when a variable property is passed as an argument as it is not sanitized."
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "9.8",
+                "tags": [
+                  "vulnerability",
+                  "security",
+                  "CRITICAL"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2023-37466",
+              "name": "LanguageSpecificPackageVulnerability",
+              "shortDescription": {
+                "text": "vm2: Promise handler sanitization can be bypassed allowing attackers to escape the sandbox and run arbitrary code"
+              },
+              "fullDescription": {
+                "text": "vm2 is an advanced vm/sandbox for Node.js. The library contains critical security issues and should not be used for production. The maintenance of the project has been discontinued. In vm2 for versions up to 3.9.19, `Promise` handler sanitization can be bypassed with the `@@species` accessor property allowing attackers to escape the sandbox and run arbitrary code, potentially allowing remote code execution inside the context of vm2 sandbox."
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://avd.aquasec.com/nvd/cve-2023-37466",
+              "help": {
+                "text": "Vulnerability CVE-2023-37466\nSeverity: CRITICAL\nPackage: vm2\nFixed Version: \nLink: [CVE-2023-37466](https://avd.aquasec.com/nvd/cve-2023-37466)\nvm2 is an advanced vm/sandbox for Node.js. The library contains critical security issues and should not be used for production. The maintenance of the project has been discontinued. In vm2 for versions up to 3.9.19, `Promise` handler sanitization can be bypassed with the `@@species` accessor property allowing attackers to escape the sandbox and run arbitrary code, potentially allowing remote code execution inside the context of vm2 sandbox.",
+                "markdown": "**Vulnerability CVE-2023-37466**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|CRITICAL|vm2||[CVE-2023-37466](https://avd.aquasec.com/nvd/cve-2023-37466)|\n\nvm2 is an advanced vm/sandbox for Node.js. The library contains critical security issues and should not be used for production. The maintenance of the project has been discontinued. In vm2 for versions up to 3.9.19, `Promise` handler sanitization can be bypassed with the `@@species` accessor property allowing attackers to escape the sandbox and run arbitrary code, potentially allowing remote code execution inside the context of vm2 sandbox."
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "9.8",
+                "tags": [
+                  "vulnerability",
+                  "security",
+                  "CRITICAL"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2023-37903",
+              "name": "LanguageSpecificPackageVulnerability",
+              "shortDescription": {
+                "text": "vm2: custom inspect function allows attackers to escape the sandbox and run arbitrary code"
+              },
+              "fullDescription": {
+                "text": "vm2 is an open source vm/sandbox for Node.js. In vm2 for versions up to and including 3.9.19, Node.js custom inspect function allows attackers to escape the sandbox and run arbitrary code. This may result in Remote Code Execution, assuming the attacker has arbitrary code execution primitive inside the context of vm2 sandbox. There are no patches and no known workarounds. Users are advised to find an alternative software."
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://avd.aquasec.com/nvd/cve-2023-37903",
+              "help": {
+                "text": "Vulnerability CVE-2023-37903\nSeverity: CRITICAL\nPackage: vm2\nFixed Version: \nLink: [CVE-2023-37903](https://avd.aquasec.com/nvd/cve-2023-37903)\nvm2 is an open source vm/sandbox for Node.js. In vm2 for versions up to and including 3.9.19, Node.js custom inspect function allows attackers to escape the sandbox and run arbitrary code. This may result in Remote Code Execution, assuming the attacker has arbitrary code execution primitive inside the context of vm2 sandbox. There are no patches and no known workarounds. Users are advised to find an alternative software.",
+                "markdown": "**Vulnerability CVE-2023-37903**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|CRITICAL|vm2||[CVE-2023-37903](https://avd.aquasec.com/nvd/cve-2023-37903)|\n\nvm2 is an open source vm/sandbox for Node.js. In vm2 for versions up to and including 3.9.19, Node.js custom inspect function allows attackers to escape the sandbox and run arbitrary code. This may result in Remote Code Execution, assuming the attacker has arbitrary code execution primitive inside the context of vm2 sandbox. There are no patches and no known workarounds. Users are advised to find an alternative software."
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "9.8",
+                "tags": [
+                  "vulnerability",
+                  "security",
+                  "CRITICAL"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2024-37890",
+              "name": "LanguageSpecificPackageVulnerability",
+              "shortDescription": {
+                "text": "nodejs-ws: denial of service when handling a request with many HTTP headers"
+              },
+              "fullDescription": {
+                "text": "ws is an open source WebSocket client and server for Node.js. A request with a number of headers exceeding theserver.maxHeadersCount threshold could be used to crash a ws server. The vulnerability was fixed in ws@8.17.1 (e55e510) and backported to ws@7.5.10 (22c2876), ws@6.2.3 (eeb76d3), and ws@5.2.4 (4abd8f6). In vulnerable versions of ws, the issue can be mitigated in the following ways: 1. Reduce the maximum allowed length of the request headers using the --max-http-header-size=size and/or the maxHeaderSize options so that no more headers than the server.maxHeadersCount limit can be sent. 2. Set server.maxHeadersCount to 0 so that no limit is applied."
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://avd.aquasec.com/nvd/cve-2024-37890",
+              "help": {
+                "text": "Vulnerability CVE-2024-37890\nSeverity: HIGH\nPackage: ws\nFixed Version: 5.2.4, 6.2.3, 7.5.10, 8.17.1\nLink: [CVE-2024-37890](https://avd.aquasec.com/nvd/cve-2024-37890)\nws is an open source WebSocket client and server for Node.js. A request with a number of headers exceeding theserver.maxHeadersCount threshold could be used to crash a ws server. The vulnerability was fixed in ws@8.17.1 (e55e510) and backported to ws@7.5.10 (22c2876), ws@6.2.3 (eeb76d3), and ws@5.2.4 (4abd8f6). In vulnerable versions of ws, the issue can be mitigated in the following ways: 1. Reduce the maximum allowed length of the request headers using the --max-http-header-size=size and/or the maxHeaderSize options so that no more headers than the server.maxHeadersCount limit can be sent. 2. Set server.maxHeadersCount to 0 so that no limit is applied.",
+                "markdown": "**Vulnerability CVE-2024-37890**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|HIGH|ws|5.2.4, 6.2.3, 7.5.10, 8.17.1|[CVE-2024-37890](https://avd.aquasec.com/nvd/cve-2024-37890)|\n\nws is an open source WebSocket client and server for Node.js. A request with a number of headers exceeding theserver.maxHeadersCount threshold could be used to crash a ws server. The vulnerability was fixed in ws@8.17.1 (e55e510) and backported to ws@7.5.10 (22c2876), ws@6.2.3 (eeb76d3), and ws@5.2.4 (4abd8f6). In vulnerable versions of ws, the issue can be mitigated in the following ways: 1. Reduce the maximum allowed length of the request headers using the --max-http-header-size=size and/or the maxHeaderSize options so that no more headers than the server.maxHeadersCount limit can be sent. 2. Set server.maxHeadersCount to 0 so that no limit is applied."
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "7.5",
+                "tags": [
+                  "vulnerability",
+                  "security",
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2023-0842",
+              "name": "LanguageSpecificPackageVulnerability",
+              "shortDescription": {
+                "text": "node-xml2js: xml2js is vulnerable to prototype pollution"
+              },
+              "fullDescription": {
+                "text": "xml2js version 0.4.23 allows an external attacker to edit or add new properties to an object. This is possible because the application does not properly validate incoming JSON keys, thus allowing the __proto__ property to be edited."
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "helpUri": "https://avd.aquasec.com/nvd/cve-2023-0842",
+              "help": {
+                "text": "Vulnerability CVE-2023-0842\nSeverity: MEDIUM\nPackage: xml2js\nFixed Version: 0.5.0\nLink: [CVE-2023-0842](https://avd.aquasec.com/nvd/cve-2023-0842)\nxml2js version 0.4.23 allows an external attacker to edit or add new properties to an object. This is possible because the application does not properly validate incoming JSON keys, thus allowing the __proto__ property to be edited.",
+                "markdown": "**Vulnerability CVE-2023-0842**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|MEDIUM|xml2js|0.5.0|[CVE-2023-0842](https://avd.aquasec.com/nvd/cve-2023-0842)|\n\nxml2js version 0.4.23 allows an external attacker to edit or add new properties to an object. This is possible because the application does not properly validate incoming JSON keys, thus allowing the __proto__ property to be edited."
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "5.3",
+                "tags": [
+                  "vulnerability",
+                  "security",
+                  "MEDIUM"
+                ]
+              }
+            }
+          ],
+          "version": "0.54.1"
+        }
+      },
+      "results": [
+        {
+          "ruleId": "CVE-2023-45857",
+          "ruleIndex": 0,
+          "level": "warning",
+          "message": {
+            "text": "Package: axios\nInstalled Version: 0.27.2\nVulnerability CVE-2023-45857\nSeverity: MEDIUM\nFixed Version: 1.6.0, 0.28.0\nLink: [CVE-2023-45857](https://avd.aquasec.com/nvd/cve-2023-45857)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "package-lock.json",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 16278,
+                  "startColumn": 1,
+                  "endLine": 16286,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "package-lock.json: axios@0.27.2"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2024-45590",
+          "ruleIndex": 1,
+          "level": "error",
+          "message": {
+            "text": "Package: body-parser\nInstalled Version: 1.20.2\nVulnerability CVE-2024-45590\nSeverity: HIGH\nFixed Version: 1.20.3\nLink: [CVE-2024-45590](https://avd.aquasec.com/nvd/cve-2024-45590)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "package-lock.json",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 6714,
+                  "startColumn": 1,
+                  "endLine": 6736,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "package-lock.json: body-parser@1.20.2"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-46233",
+          "ruleIndex": 2,
+          "level": "error",
+          "message": {
+            "text": "Package: crypto-js\nInstalled Version: 3.3.0\nVulnerability CVE-2023-46233\nSeverity: CRITICAL\nFixed Version: 4.2.0\nLink: [CVE-2023-46233](https://avd.aquasec.com/nvd/cve-2023-46233)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "package-lock.json",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 8343,
+                  "startColumn": 1,
+                  "endLine": 8348,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "package-lock.json: crypto-js@3.3.0"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2024-21529",
+          "ruleIndex": 3,
+          "level": "error",
+          "message": {
+            "text": "Package: dset\nInstalled Version: 3.1.3\nVulnerability CVE-2024-21529\nSeverity: HIGH\nFixed Version: 3.1.4\nLink: [CVE-2024-21529](https://avd.aquasec.com/nvd/cve-2024-21529)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "package-lock.json",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 9174,
+                  "startColumn": 1,
+                  "endLine": 9181,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "package-lock.json: dset@3.1.3"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2024-43796",
+          "ruleIndex": 4,
+          "level": "warning",
+          "message": {
+            "text": "Package: express\nInstalled Version: 4.19.2\nVulnerability CVE-2024-43796\nSeverity: MEDIUM\nFixed Version: 4.20.0, 5.0.0\nLink: [CVE-2024-43796](https://avd.aquasec.com/nvd/cve-2024-43796)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "package-lock.json",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 9865,
+                  "startColumn": 1,
+                  "endLine": 9905,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "package-lock.json: express@4.19.2"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2024-41818",
+          "ruleIndex": 5,
+          "level": "error",
+          "message": {
+            "text": "Package: fast-xml-parser\nInstalled Version: 4.2.5\nVulnerability CVE-2024-41818\nSeverity: HIGH\nFixed Version: 4.4.1\nLink: [CVE-2024-41818](https://avd.aquasec.com/nvd/cve-2024-41818)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "package-lock.json",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 10071,
+                  "startColumn": 1,
+                  "endLine": 10091,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "package-lock.json: fast-xml-parser@4.2.5"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2024-4067",
+          "ruleIndex": 6,
+          "level": "warning",
+          "message": {
+            "text": "Package: micromatch\nInstalled Version: 4.0.7\nVulnerability CVE-2024-4067\nSeverity: MEDIUM\nFixed Version: 4.0.8\nLink: [CVE-2024-4067](https://avd.aquasec.com/nvd/cve-2024-4067)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "package-lock.json",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 14125,
+                  "startColumn": 1,
+                  "endLine": 14136,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "package-lock.json: micromatch@4.0.7"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-46298",
+          "ruleIndex": 7,
+          "level": "note",
+          "message": {
+            "text": "Package: next\nInstalled Version: 12.3.3\nVulnerability CVE-2023-46298\nSeverity: LOW\nFixed Version: 13.4.20-canary.13\nLink: [CVE-2023-46298](https://avd.aquasec.com/nvd/cve-2023-46298)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "package-lock.json",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 14503,
+                  "startColumn": 1,
+                  "endLine": 14554,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "package-lock.json: next@12.3.3"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2024-45296",
+          "ruleIndex": 8,
+          "level": "error",
+          "message": {
+            "text": "Package: path-to-regexp\nInstalled Version: 0.1.7\nVulnerability CVE-2024-45296\nSeverity: HIGH\nFixed Version: 1.9.0, 0.1.10, 8.0.0, 3.3.0, 6.3.0\nLink: [CVE-2024-45296](https://avd.aquasec.com/nvd/cve-2024-45296)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "package-lock.json",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 15337,
+                  "startColumn": 1,
+                  "endLine": 15341,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "package-lock.json: path-to-regexp@0.1.7"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2024-4367",
+          "ruleIndex": 9,
+          "level": "error",
+          "message": {
+            "text": "Package: pdfjs-dist\nInstalled Version: 3.11.174\nVulnerability CVE-2024-4367\nSeverity: HIGH\nFixed Version: 4.2.67\nLink: [CVE-2024-4367](https://avd.aquasec.com/nvd/cve-2024-4367)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "package-lock.json",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 15404,
+                  "startColumn": 1,
+                  "endLine": 15415,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "package-lock.json: pdfjs-dist@3.11.174"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-44270",
+          "ruleIndex": 10,
+          "level": "warning",
+          "message": {
+            "text": "Package: postcss\nInstalled Version: 8.4.14\nVulnerability CVE-2023-44270\nSeverity: MEDIUM\nFixed Version: 8.4.31\nLink: [CVE-2023-44270](https://avd.aquasec.com/nvd/cve-2023-44270)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "package-lock.json",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 14555,
+                  "startColumn": 1,
+                  "endLine": 14577,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "package-lock.json: postcss@8.4.14"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2024-43799",
+          "ruleIndex": 11,
+          "level": "warning",
+          "message": {
+            "text": "Package: send\nInstalled Version: 0.18.0\nVulnerability CVE-2024-43799\nSeverity: MEDIUM\nFixed Version: 0.19.0\nLink: [CVE-2024-43799](https://avd.aquasec.com/nvd/cve-2024-43799)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "package-lock.json",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 17874,
+                  "startColumn": 1,
+                  "endLine": 17896,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "package-lock.json: send@0.18.0"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2024-43800",
+          "ruleIndex": 12,
+          "level": "warning",
+          "message": {
+            "text": "Package: serve-static\nInstalled Version: 1.15.0\nVulnerability CVE-2024-43800\nSeverity: MEDIUM\nFixed Version: 1.16.0, 2.1.0\nLink: [CVE-2024-43800](https://avd.aquasec.com/nvd/cve-2024-43800)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "package-lock.json",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 17973,
+                  "startColumn": 1,
+                  "endLine": 17986,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "package-lock.json: serve-static@1.15.0"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2021-23358",
+          "ruleIndex": 13,
+          "level": "error",
+          "message": {
+            "text": "Package: underscore\nInstalled Version: 1.6.0\nVulnerability CVE-2021-23358\nSeverity: CRITICAL\nFixed Version: 1.12.1\nLink: [CVE-2021-23358](https://avd.aquasec.com/nvd/cve-2021-23358)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "package-lock.json",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 19406,
+                  "startColumn": 1,
+                  "endLine": 19410,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "package-lock.json: underscore@1.6.0"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-37466",
+          "ruleIndex": 14,
+          "level": "error",
+          "message": {
+            "text": "Package: vm2\nInstalled Version: 3.9.19\nVulnerability CVE-2023-37466\nSeverity: CRITICAL\nFixed Version: \nLink: [CVE-2023-37466](https://avd.aquasec.com/nvd/cve-2023-37466)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "package-lock.json",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 19778,
+                  "startColumn": 1,
+                  "endLine": 19793,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "package-lock.json: vm2@3.9.19"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-37903",
+          "ruleIndex": 15,
+          "level": "error",
+          "message": {
+            "text": "Package: vm2\nInstalled Version: 3.9.19\nVulnerability CVE-2023-37903\nSeverity: CRITICAL\nFixed Version: \nLink: [CVE-2023-37903](https://avd.aquasec.com/nvd/cve-2023-37903)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "package-lock.json",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 19778,
+                  "startColumn": 1,
+                  "endLine": 19793,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "package-lock.json: vm2@3.9.19"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2024-37890",
+          "ruleIndex": 16,
+          "level": "error",
+          "message": {
+            "text": "Package: ws\nInstalled Version: 8.13.0\nVulnerability CVE-2024-37890\nSeverity: HIGH\nFixed Version: 5.2.4, 6.2.3, 7.5.10, 8.17.1\nLink: [CVE-2024-37890](https://avd.aquasec.com/nvd/cve-2024-37890)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "package-lock.json",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 3006,
+                  "startColumn": 1,
+                  "endLine": 3025,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "package-lock.json: ws@8.13.0"
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "package-lock.json",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 3059,
+                  "startColumn": 1,
+                  "endLine": 3078,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "package-lock.json: ws@8.13.0"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-0842",
+          "ruleIndex": 17,
+          "level": "warning",
+          "message": {
+            "text": "Package: xml2js\nInstalled Version: 0.4.23\nVulnerability CVE-2023-0842\nSeverity: MEDIUM\nFixed Version: 0.5.0\nLink: [CVE-2023-0842](https://avd.aquasec.com/nvd/cve-2023-0842)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "package-lock.json",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 20201,
+                  "startColumn": 1,
+                  "endLine": 20212,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "package-lock.json: xml2js@0.4.23"
+              }
+            }
+          ]
+        }
+      ],
+      "columnKind": "utf16CodeUnits",
+      "originalUriBaseIds": {
+        "ROOTPATH": {
+          "uri": "file:///home/jenkins/workspace/securityci/716413e0-706f-4268-b87b-acc9c167f0fd/"
+        }
+      }
+    }
+  ]
+}

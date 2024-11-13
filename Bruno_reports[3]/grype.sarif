@@ -1,0 +1,1153 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://docs.oasis-open.org/sarif/sarif/v2.1.0/errata01/os/schemas/sarif-schema-2.1.0.json",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "grype",
+          "version": "0.79.4",
+          "informationUri": "https://github.com/anchore/grype",
+          "rules": [
+            {
+              "id": "GHSA-3h5v-q93c-6h6q-ws",
+              "name": "JavascriptMatcherExactDirectMatch",
+              "shortDescription": {
+                "text": "GHSA-3h5v-q93c-6h6q high vulnerability for ws package"
+              },
+              "fullDescription": {
+                "text": "ws affected by a DoS when handling a request with many HTTP headers"
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability GHSA-3h5v-q93c-6h6q\nSeverity: high\nPackage: ws\nVersion: 8.13.0\nFix Version: 8.17.1\nType: npm\nLocation: /package-lock.json\nData Namespace: github:language:javascript\nLink: [GHSA-3h5v-q93c-6h6q](https://github.com/advisories/GHSA-3h5v-q93c-6h6q)",
+                "markdown": "**Vulnerability GHSA-3h5v-q93c-6h6q**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| high  | ws  | 8.13.0  | 8.17.1  | npm  | /package-lock.json  | github:language:javascript  | [GHSA-3h5v-q93c-6h6q](https://github.com/advisories/GHSA-3h5v-q93c-6h6q)  |\n"
+              },
+              "properties": {
+                "security-severity": "7.5"
+              }
+            },
+            {
+              "id": "GHSA-4vvj-4cpr-p986-webpack",
+              "name": "JavascriptMatcherExactDirectMatch",
+              "shortDescription": {
+                "text": "GHSA-4vvj-4cpr-p986 medium vulnerability for webpack package"
+              },
+              "fullDescription": {
+                "text": "Webpack's AutoPublicPathRuntimeModule has a DOM Clobbering Gadget that leads to XSS"
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability GHSA-4vvj-4cpr-p986\nSeverity: medium\nPackage: webpack\nVersion: 5.93.0\nFix Version: 5.94.0\nType: npm\nLocation: /package-lock.json\nData Namespace: github:language:javascript\nLink: [GHSA-4vvj-4cpr-p986](https://github.com/advisories/GHSA-4vvj-4cpr-p986)",
+                "markdown": "**Vulnerability GHSA-4vvj-4cpr-p986**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | webpack  | 5.93.0  | 5.94.0  | npm  | /package-lock.json  | github:language:javascript  | [GHSA-4vvj-4cpr-p986](https://github.com/advisories/GHSA-4vvj-4cpr-p986)  |\n"
+              },
+              "properties": {
+                "security-severity": "6.4"
+              }
+            },
+            {
+              "id": "GHSA-776f-qx25-q3cc-xml2js",
+              "name": "JavascriptMatcherExactDirectMatch",
+              "shortDescription": {
+                "text": "GHSA-776f-qx25-q3cc medium vulnerability for xml2js package"
+              },
+              "fullDescription": {
+                "text": "xml2js is vulnerable to prototype pollution"
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability GHSA-776f-qx25-q3cc\nSeverity: medium\nPackage: xml2js\nVersion: 0.4.23\nFix Version: 0.5.0\nType: npm\nLocation: /package-lock.json\nData Namespace: github:language:javascript\nLink: [GHSA-776f-qx25-q3cc](https://github.com/advisories/GHSA-776f-qx25-q3cc)",
+                "markdown": "**Vulnerability GHSA-776f-qx25-q3cc**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | xml2js  | 0.4.23  | 0.5.0  | npm  | /package-lock.json  | github:language:javascript  | [GHSA-776f-qx25-q3cc](https://github.com/advisories/GHSA-776f-qx25-q3cc)  |\n"
+              },
+              "properties": {
+                "security-severity": "5.3"
+              }
+            },
+            {
+              "id": "GHSA-7fh5-64p2-3v2j-postcss",
+              "name": "JavascriptMatcherExactDirectMatch",
+              "shortDescription": {
+                "text": "GHSA-7fh5-64p2-3v2j medium vulnerability for postcss package"
+              },
+              "fullDescription": {
+                "text": "PostCSS line return parsing error"
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability GHSA-7fh5-64p2-3v2j\nSeverity: medium\nPackage: postcss\nVersion: 8.4.14\nFix Version: 8.4.31\nType: npm\nLocation: /package-lock.json\nData Namespace: github:language:javascript\nLink: [GHSA-7fh5-64p2-3v2j](https://github.com/advisories/GHSA-7fh5-64p2-3v2j)",
+                "markdown": "**Vulnerability GHSA-7fh5-64p2-3v2j**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | postcss  | 8.4.14  | 8.4.31  | npm  | /package-lock.json  | github:language:javascript  | [GHSA-7fh5-64p2-3v2j](https://github.com/advisories/GHSA-7fh5-64p2-3v2j)  |\n"
+              },
+              "properties": {
+                "security-severity": "5.3"
+              }
+            },
+            {
+              "id": "GHSA-952p-6rrq-rcjv-micromatch",
+              "name": "JavascriptMatcherExactDirectMatch",
+              "shortDescription": {
+                "text": "GHSA-952p-6rrq-rcjv medium vulnerability for micromatch package"
+              },
+              "fullDescription": {
+                "text": "Regular Expression Denial of Service (ReDoS) in micromatch"
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability GHSA-952p-6rrq-rcjv\nSeverity: medium\nPackage: micromatch\nVersion: 4.0.7\nFix Version: 4.0.8\nType: npm\nLocation: /package-lock.json\nData Namespace: github:language:javascript\nLink: [GHSA-952p-6rrq-rcjv](https://github.com/advisories/GHSA-952p-6rrq-rcjv)",
+                "markdown": "**Vulnerability GHSA-952p-6rrq-rcjv**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | micromatch  | 4.0.7  | 4.0.8  | npm  | /package-lock.json  | github:language:javascript  | [GHSA-952p-6rrq-rcjv](https://github.com/advisories/GHSA-952p-6rrq-rcjv)  |\n"
+              },
+              "properties": {
+                "security-severity": "5.3"
+              }
+            },
+            {
+              "id": "GHSA-9wv6-86v2-598j-path-to-regexp",
+              "name": "JavascriptMatcherExactDirectMatch",
+              "shortDescription": {
+                "text": "GHSA-9wv6-86v2-598j high vulnerability for path-to-regexp package"
+              },
+              "fullDescription": {
+                "text": "path-to-regexp outputs backtracking regular expressions"
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability GHSA-9wv6-86v2-598j\nSeverity: high\nPackage: path-to-regexp\nVersion: 0.1.7\nFix Version: 0.1.10\nType: npm\nLocation: /package-lock.json\nData Namespace: github:language:javascript\nLink: [GHSA-9wv6-86v2-598j](https://github.com/advisories/GHSA-9wv6-86v2-598j)",
+                "markdown": "**Vulnerability GHSA-9wv6-86v2-598j**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| high  | path-to-regexp  | 0.1.7  | 0.1.10  | npm  | /package-lock.json  | github:language:javascript  | [GHSA-9wv6-86v2-598j](https://github.com/advisories/GHSA-9wv6-86v2-598j)  |\n"
+              },
+              "properties": {
+                "security-severity": "7.5"
+              }
+            },
+            {
+              "id": "GHSA-c2qf-rxjj-qqgw-semver",
+              "name": "JavascriptMatcherExactDirectMatch",
+              "shortDescription": {
+                "text": "GHSA-c2qf-rxjj-qqgw high vulnerability for semver package"
+              },
+              "fullDescription": {
+                "text": "semver vulnerable to Regular Expression Denial of Service"
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability GHSA-c2qf-rxjj-qqgw\nSeverity: high\nPackage: semver\nVersion: 2.3.2\nFix Version: 5.7.2\nType: npm\nLocation: /package-lock.json\nData Namespace: github:language:javascript\nLink: [GHSA-c2qf-rxjj-qqgw](https://github.com/advisories/GHSA-c2qf-rxjj-qqgw)",
+                "markdown": "**Vulnerability GHSA-c2qf-rxjj-qqgw**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| high  | semver  | 2.3.2  | 5.7.2  | npm  | /package-lock.json  | github:language:javascript  | [GHSA-c2qf-rxjj-qqgw](https://github.com/advisories/GHSA-c2qf-rxjj-qqgw)  |\n"
+              },
+              "properties": {
+                "security-severity": "7.5"
+              }
+            },
+            {
+              "id": "GHSA-c59h-r6p8-q9wc-next",
+              "name": "JavascriptMatcherExactDirectMatch",
+              "shortDescription": {
+                "text": "GHSA-c59h-r6p8-q9wc low vulnerability for next package"
+              },
+              "fullDescription": {
+                "text": "Next.js missing cache-control header may lead to CDN caching empty reply"
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability GHSA-c59h-r6p8-q9wc\nSeverity: low\nPackage: next\nVersion: 12.3.3\nFix Version: 13.4.20-canary.13\nType: npm\nLocation: /package-lock.json\nData Namespace: github:language:javascript\nLink: [GHSA-c59h-r6p8-q9wc](https://github.com/advisories/GHSA-c59h-r6p8-q9wc)",
+                "markdown": "**Vulnerability GHSA-c59h-r6p8-q9wc**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | next  | 12.3.3  | 13.4.20-canary.13  | npm  | /package-lock.json  | github:language:javascript  | [GHSA-c59h-r6p8-q9wc](https://github.com/advisories/GHSA-c59h-r6p8-q9wc)  |\n"
+              },
+              "properties": {
+                "security-severity": "7.5"
+              }
+            },
+            {
+              "id": "GHSA-cchq-frgv-rjh5-vm2",
+              "name": "JavascriptMatcherExactDirectMatch",
+              "shortDescription": {
+                "text": "GHSA-cchq-frgv-rjh5 critical vulnerability for vm2 package"
+              },
+              "fullDescription": {
+                "text": "vm2 Sandbox Escape vulnerability"
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability GHSA-cchq-frgv-rjh5\nSeverity: critical\nPackage: vm2\nVersion: 3.9.19\nFix Version: \nType: npm\nLocation: /package-lock.json\nData Namespace: github:language:javascript\nLink: [GHSA-cchq-frgv-rjh5](https://github.com/advisories/GHSA-cchq-frgv-rjh5)",
+                "markdown": "**Vulnerability GHSA-cchq-frgv-rjh5**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| critical  | vm2  | 3.9.19  |   | npm  | /package-lock.json  | github:language:javascript  | [GHSA-cchq-frgv-rjh5](https://github.com/advisories/GHSA-cchq-frgv-rjh5)  |\n"
+              },
+              "properties": {
+                "security-severity": "9.8"
+              }
+            },
+            {
+              "id": "GHSA-cf4h-3jhx-xvhq-underscore",
+              "name": "JavascriptMatcherExactDirectMatch",
+              "shortDescription": {
+                "text": "GHSA-cf4h-3jhx-xvhq critical vulnerability for underscore package"
+              },
+              "fullDescription": {
+                "text": "Arbitrary Code Execution in underscore"
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability GHSA-cf4h-3jhx-xvhq\nSeverity: critical\nPackage: underscore\nVersion: 1.6.0\nFix Version: 1.12.1\nType: npm\nLocation: /package-lock.json\nData Namespace: github:language:javascript\nLink: [GHSA-cf4h-3jhx-xvhq](https://github.com/advisories/GHSA-cf4h-3jhx-xvhq)",
+                "markdown": "**Vulnerability GHSA-cf4h-3jhx-xvhq**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| critical  | underscore  | 1.6.0  | 1.12.1  | npm  | /package-lock.json  | github:language:javascript  | [GHSA-cf4h-3jhx-xvhq](https://github.com/advisories/GHSA-cf4h-3jhx-xvhq)  |\n"
+              },
+              "properties": {
+                "security-severity": "9.8"
+              }
+            },
+            {
+              "id": "GHSA-cm22-4g7w-348p-serve-static",
+              "name": "JavascriptMatcherExactDirectMatch",
+              "shortDescription": {
+                "text": "GHSA-cm22-4g7w-348p medium vulnerability for serve-static package"
+              },
+              "fullDescription": {
+                "text": "serve-static vulnerable to template injection that can lead to XSS"
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability GHSA-cm22-4g7w-348p\nSeverity: medium\nPackage: serve-static\nVersion: 1.15.0\nFix Version: 1.16.0\nType: npm\nLocation: /package-lock.json\nData Namespace: github:language:javascript\nLink: [GHSA-cm22-4g7w-348p](https://github.com/advisories/GHSA-cm22-4g7w-348p)",
+                "markdown": "**Vulnerability GHSA-cm22-4g7w-348p**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | serve-static  | 1.15.0  | 1.16.0  | npm  | /package-lock.json  | github:language:javascript  | [GHSA-cm22-4g7w-348p](https://github.com/advisories/GHSA-cm22-4g7w-348p)  |\n"
+              },
+              "properties": {
+                "security-severity": "5.0"
+              }
+            },
+            {
+              "id": "GHSA-f6v4-cf5j-vf3w-dset",
+              "name": "JavascriptMatcherExactDirectMatch",
+              "shortDescription": {
+                "text": "GHSA-f6v4-cf5j-vf3w high vulnerability for dset package"
+              },
+              "fullDescription": {
+                "text": "dset Prototype Pollution vulnerability"
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability GHSA-f6v4-cf5j-vf3w\nSeverity: high\nPackage: dset\nVersion: 3.1.3\nFix Version: 3.1.4\nType: npm\nLocation: /package-lock.json\nData Namespace: github:language:javascript\nLink: [GHSA-f6v4-cf5j-vf3w](https://github.com/advisories/GHSA-f6v4-cf5j-vf3w)",
+                "markdown": "**Vulnerability GHSA-f6v4-cf5j-vf3w**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| high  | dset  | 3.1.3  | 3.1.4  | npm  | /package-lock.json  | github:language:javascript  | [GHSA-f6v4-cf5j-vf3w](https://github.com/advisories/GHSA-f6v4-cf5j-vf3w)  |\n"
+              },
+              "properties": {
+                "security-severity": "8.2"
+              }
+            },
+            {
+              "id": "GHSA-f8q6-p94x-37v3-minimatch",
+              "name": "JavascriptMatcherExactDirectMatch",
+              "shortDescription": {
+                "text": "GHSA-f8q6-p94x-37v3 high vulnerability for minimatch package"
+              },
+              "fullDescription": {
+                "text": "minimatch ReDoS vulnerability"
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability GHSA-f8q6-p94x-37v3\nSeverity: high\nPackage: minimatch\nVersion: 3.0.4\nFix Version: 3.0.5\nType: npm\nLocation: /package-lock.json\nData Namespace: github:language:javascript\nLink: [GHSA-f8q6-p94x-37v3](https://github.com/advisories/GHSA-f8q6-p94x-37v3)",
+                "markdown": "**Vulnerability GHSA-f8q6-p94x-37v3**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| high  | minimatch  | 3.0.4  | 3.0.5  | npm  | /package-lock.json  | github:language:javascript  | [GHSA-f8q6-p94x-37v3](https://github.com/advisories/GHSA-f8q6-p94x-37v3)  |\n"
+              },
+              "properties": {
+                "security-severity": "7.5"
+              }
+            },
+            {
+              "id": "GHSA-g644-9gfx-q4q4-vm2",
+              "name": "JavascriptMatcherExactDirectMatch",
+              "shortDescription": {
+                "text": "GHSA-g644-9gfx-q4q4 critical vulnerability for vm2 package"
+              },
+              "fullDescription": {
+                "text": "vm2 Sandbox Escape vulnerability"
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability GHSA-g644-9gfx-q4q4\nSeverity: critical\nPackage: vm2\nVersion: 3.9.19\nFix Version: \nType: npm\nLocation: /package-lock.json\nData Namespace: github:language:javascript\nLink: [GHSA-g644-9gfx-q4q4](https://github.com/advisories/GHSA-g644-9gfx-q4q4)",
+                "markdown": "**Vulnerability GHSA-g644-9gfx-q4q4**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| critical  | vm2  | 3.9.19  |   | npm  | /package-lock.json  | github:language:javascript  | [GHSA-g644-9gfx-q4q4](https://github.com/advisories/GHSA-g644-9gfx-q4q4)  |\n"
+              },
+              "properties": {
+                "security-severity": "9.8"
+              }
+            },
+            {
+              "id": "GHSA-gcx4-mw62-g8wm-rollup",
+              "name": "JavascriptMatcherExactDirectMatch",
+              "shortDescription": {
+                "text": "GHSA-gcx4-mw62-g8wm high vulnerability for rollup package"
+              },
+              "fullDescription": {
+                "text": "DOM Clobbering Gadget found in rollup bundled scripts that leads to XSS"
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability GHSA-gcx4-mw62-g8wm\nSeverity: high\nPackage: rollup\nVersion: 3.2.5\nFix Version: 3.29.5\nType: npm\nLocation: /package-lock.json\nData Namespace: github:language:javascript\nLink: [GHSA-gcx4-mw62-g8wm](https://github.com/advisories/GHSA-gcx4-mw62-g8wm)",
+                "markdown": "**Vulnerability GHSA-gcx4-mw62-g8wm**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| high  | rollup  | 3.2.5  | 3.29.5  | npm  | /package-lock.json  | github:language:javascript  | [GHSA-gcx4-mw62-g8wm](https://github.com/advisories/GHSA-gcx4-mw62-g8wm)  |\n"
+              },
+              "properties": {
+                "security-severity": "6.4"
+              }
+            },
+            {
+              "id": "GHSA-m6fv-jmcg-4jfg-send",
+              "name": "JavascriptMatcherExactDirectMatch",
+              "shortDescription": {
+                "text": "GHSA-m6fv-jmcg-4jfg medium vulnerability for send package"
+              },
+              "fullDescription": {
+                "text": "send vulnerable to template injection that can lead to XSS"
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability GHSA-m6fv-jmcg-4jfg\nSeverity: medium\nPackage: send\nVersion: 0.18.0\nFix Version: 0.19.0\nType: npm\nLocation: /package-lock.json\nData Namespace: github:language:javascript\nLink: [GHSA-m6fv-jmcg-4jfg](https://github.com/advisories/GHSA-m6fv-jmcg-4jfg)",
+                "markdown": "**Vulnerability GHSA-m6fv-jmcg-4jfg**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | send  | 0.18.0  | 0.19.0  | npm  | /package-lock.json  | github:language:javascript  | [GHSA-m6fv-jmcg-4jfg](https://github.com/advisories/GHSA-m6fv-jmcg-4jfg)  |\n"
+              },
+              "properties": {
+                "security-severity": "5.0"
+              }
+            },
+            {
+              "id": "GHSA-mpg4-rc92-vx8v-fast-xml-parser",
+              "name": "JavascriptMatcherExactDirectMatch",
+              "shortDescription": {
+                "text": "GHSA-mpg4-rc92-vx8v high vulnerability for fast-xml-parser package"
+              },
+              "fullDescription": {
+                "text": "fast-xml-parser vulnerable to ReDOS at currency parsing"
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability GHSA-mpg4-rc92-vx8v\nSeverity: high\nPackage: fast-xml-parser\nVersion: 4.2.5\nFix Version: 4.4.1\nType: npm\nLocation: /package-lock.json\nData Namespace: github:language:javascript\nLink: [GHSA-mpg4-rc92-vx8v](https://github.com/advisories/GHSA-mpg4-rc92-vx8v)",
+                "markdown": "**Vulnerability GHSA-mpg4-rc92-vx8v**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| high  | fast-xml-parser  | 4.2.5  | 4.4.1  | npm  | /package-lock.json  | github:language:javascript  | [GHSA-mpg4-rc92-vx8v](https://github.com/advisories/GHSA-mpg4-rc92-vx8v)  |\n"
+              },
+              "properties": {
+                "security-severity": "7.5"
+              }
+            },
+            {
+              "id": "GHSA-pfrx-2q88-qq97-got",
+              "name": "JavascriptMatcherExactDirectMatch",
+              "shortDescription": {
+                "text": "GHSA-pfrx-2q88-qq97 medium vulnerability for got package"
+              },
+              "fullDescription": {
+                "text": "Got allows a redirect to a UNIX socket"
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability GHSA-pfrx-2q88-qq97\nSeverity: medium\nPackage: got\nVersion: 9.6.0\nFix Version: 11.8.5\nType: npm\nLocation: /package-lock.json\nData Namespace: github:language:javascript\nLink: [GHSA-pfrx-2q88-qq97](https://github.com/advisories/GHSA-pfrx-2q88-qq97)",
+                "markdown": "**Vulnerability GHSA-pfrx-2q88-qq97**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | got  | 9.6.0  | 11.8.5  | npm  | /package-lock.json  | github:language:javascript  | [GHSA-pfrx-2q88-qq97](https://github.com/advisories/GHSA-pfrx-2q88-qq97)  |\n"
+              },
+              "properties": {
+                "security-severity": "5.3"
+              }
+            },
+            {
+              "id": "GHSA-pp7h-53gx-mx7r-bl",
+              "name": "JavascriptMatcherExactDirectMatch",
+              "shortDescription": {
+                "text": "GHSA-pp7h-53gx-mx7r medium vulnerability for bl package"
+              },
+              "fullDescription": {
+                "text": "Remote Memory Exposure in bl"
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability GHSA-pp7h-53gx-mx7r\nSeverity: medium\nPackage: bl\nVersion: 0.8.2\nFix Version: 1.2.3\nType: npm\nLocation: /package-lock.json\nData Namespace: github:language:javascript\nLink: [GHSA-pp7h-53gx-mx7r](https://github.com/advisories/GHSA-pp7h-53gx-mx7r)",
+                "markdown": "**Vulnerability GHSA-pp7h-53gx-mx7r**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | bl  | 0.8.2  | 1.2.3  | npm  | /package-lock.json  | github:language:javascript  | [GHSA-pp7h-53gx-mx7r](https://github.com/advisories/GHSA-pp7h-53gx-mx7r)  |\n"
+              },
+              "properties": {
+                "security-severity": "6.5"
+              }
+            },
+            {
+              "id": "GHSA-qw6h-vgh9-j6wx-express",
+              "name": "JavascriptMatcherExactDirectMatch",
+              "shortDescription": {
+                "text": "GHSA-qw6h-vgh9-j6wx medium vulnerability for express package"
+              },
+              "fullDescription": {
+                "text": "express vulnerable to XSS via response.redirect()"
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability GHSA-qw6h-vgh9-j6wx\nSeverity: medium\nPackage: express\nVersion: 4.19.2\nFix Version: 4.20.0\nType: npm\nLocation: /package-lock.json\nData Namespace: github:language:javascript\nLink: [GHSA-qw6h-vgh9-j6wx](https://github.com/advisories/GHSA-qw6h-vgh9-j6wx)",
+                "markdown": "**Vulnerability GHSA-qw6h-vgh9-j6wx**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | express  | 4.19.2  | 4.20.0  | npm  | /package-lock.json  | github:language:javascript  | [GHSA-qw6h-vgh9-j6wx](https://github.com/advisories/GHSA-qw6h-vgh9-j6wx)  |\n"
+              },
+              "properties": {
+                "security-severity": "5.0"
+              }
+            },
+            {
+              "id": "GHSA-qwcr-r2fm-qrc7-body-parser",
+              "name": "JavascriptMatcherExactDirectMatch",
+              "shortDescription": {
+                "text": "GHSA-qwcr-r2fm-qrc7 high vulnerability for body-parser package"
+              },
+              "fullDescription": {
+                "text": "body-parser vulnerable to denial of service when url encoding is enabled"
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability GHSA-qwcr-r2fm-qrc7\nSeverity: high\nPackage: body-parser\nVersion: 1.20.2\nFix Version: 1.20.3\nType: npm\nLocation: /package-lock.json\nData Namespace: github:language:javascript\nLink: [GHSA-qwcr-r2fm-qrc7](https://github.com/advisories/GHSA-qwcr-r2fm-qrc7)",
+                "markdown": "**Vulnerability GHSA-qwcr-r2fm-qrc7**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| high  | body-parser  | 1.20.2  | 1.20.3  | npm  | /package-lock.json  | github:language:javascript  | [GHSA-qwcr-r2fm-qrc7](https://github.com/advisories/GHSA-qwcr-r2fm-qrc7)  |\n"
+              },
+              "properties": {
+                "security-severity": "7.5"
+              }
+            },
+            {
+              "id": "GHSA-r4pf-3v7r-hh55-app-builder-lib",
+              "name": "JavascriptMatcherExactDirectMatch",
+              "shortDescription": {
+                "text": "GHSA-r4pf-3v7r-hh55 high vulnerability for app-builder-lib package"
+              },
+              "fullDescription": {
+                "text": "electron-builder's NSIS installer - execute arbitrary code on the target machine (Windows only)"
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability GHSA-r4pf-3v7r-hh55\nSeverity: high\nPackage: app-builder-lib\nVersion: 23.0.2\nFix Version: 24.13.2\nType: npm\nLocation: /package-lock.json\nData Namespace: github:language:javascript\nLink: [GHSA-r4pf-3v7r-hh55](https://github.com/advisories/GHSA-r4pf-3v7r-hh55)",
+                "markdown": "**Vulnerability GHSA-r4pf-3v7r-hh55**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| high  | app-builder-lib  | 23.0.2  | 24.13.2  | npm  | /package-lock.json  | github:language:javascript  | [GHSA-r4pf-3v7r-hh55](https://github.com/advisories/GHSA-r4pf-3v7r-hh55)  |\n"
+              },
+              "properties": {
+                "security-severity": "7.3"
+              }
+            },
+            {
+              "id": "GHSA-wf5p-g6vw-rhxx-axios",
+              "name": "JavascriptMatcherExactDirectMatch",
+              "shortDescription": {
+                "text": "GHSA-wf5p-g6vw-rhxx medium vulnerability for axios package"
+              },
+              "fullDescription": {
+                "text": "Axios Cross-Site Request Forgery Vulnerability"
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability GHSA-wf5p-g6vw-rhxx\nSeverity: medium\nPackage: axios\nVersion: 0.27.2\nFix Version: 0.28.0\nType: npm\nLocation: /package-lock.json\nData Namespace: github:language:javascript\nLink: [GHSA-wf5p-g6vw-rhxx](https://github.com/advisories/GHSA-wf5p-g6vw-rhxx)",
+                "markdown": "**Vulnerability GHSA-wf5p-g6vw-rhxx**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | axios  | 0.27.2  | 0.28.0  | npm  | /package-lock.json  | github:language:javascript  | [GHSA-wf5p-g6vw-rhxx](https://github.com/advisories/GHSA-wf5p-g6vw-rhxx)  |\n"
+              },
+              "properties": {
+                "security-severity": "6.5"
+              }
+            },
+            {
+              "id": "GHSA-wgrm-67xf-hhpq-pdfjs-dist",
+              "name": "JavascriptMatcherExactDirectMatch",
+              "shortDescription": {
+                "text": "GHSA-wgrm-67xf-hhpq high vulnerability for pdfjs-dist package"
+              },
+              "fullDescription": {
+                "text": "PDF.js vulnerable to arbitrary JavaScript execution upon opening a malicious PDF"
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability GHSA-wgrm-67xf-hhpq\nSeverity: high\nPackage: pdfjs-dist\nVersion: 3.11.174\nFix Version: 4.2.67\nType: npm\nLocation: /package-lock.json\nData Namespace: github:language:javascript\nLink: [GHSA-wgrm-67xf-hhpq](https://github.com/advisories/GHSA-wgrm-67xf-hhpq)",
+                "markdown": "**Vulnerability GHSA-wgrm-67xf-hhpq**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| high  | pdfjs-dist  | 3.11.174  | 4.2.67  | npm  | /package-lock.json  | github:language:javascript  | [GHSA-wgrm-67xf-hhpq](https://github.com/advisories/GHSA-wgrm-67xf-hhpq)  |\n"
+              },
+              "properties": {
+                "security-severity": "7.0"
+              }
+            },
+            {
+              "id": "GHSA-wrw9-m778-g6mc-bl",
+              "name": "JavascriptMatcherExactDirectMatch",
+              "shortDescription": {
+                "text": "GHSA-wrw9-m778-g6mc medium vulnerability for bl package"
+              },
+              "fullDescription": {
+                "text": "Memory Exposure in bl"
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability GHSA-wrw9-m778-g6mc\nSeverity: medium\nPackage: bl\nVersion: 0.8.2\nFix Version: 0.9.5\nType: npm\nLocation: /package-lock.json\nData Namespace: github:language:javascript\nLink: [GHSA-wrw9-m778-g6mc](https://github.com/advisories/GHSA-wrw9-m778-g6mc)",
+                "markdown": "**Vulnerability GHSA-wrw9-m778-g6mc**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | bl  | 0.8.2  | 0.9.5  | npm  | /package-lock.json  | github:language:javascript  | [GHSA-wrw9-m778-g6mc](https://github.com/advisories/GHSA-wrw9-m778-g6mc)  |\n"
+              },
+              "properties": {
+                "security-severity": "4.0"
+              }
+            },
+            {
+              "id": "GHSA-x6fg-f45m-jf5q-semver",
+              "name": "JavascriptMatcherExactDirectMatch",
+              "shortDescription": {
+                "text": "GHSA-x6fg-f45m-jf5q high vulnerability for semver package"
+              },
+              "fullDescription": {
+                "text": "Regular Expression Denial of Service in semver"
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability GHSA-x6fg-f45m-jf5q\nSeverity: high\nPackage: semver\nVersion: 2.3.2\nFix Version: 4.3.2\nType: npm\nLocation: /package-lock.json\nData Namespace: github:language:javascript\nLink: [GHSA-x6fg-f45m-jf5q](https://github.com/advisories/GHSA-x6fg-f45m-jf5q)",
+                "markdown": "**Vulnerability GHSA-x6fg-f45m-jf5q**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| high  | semver  | 2.3.2  | 4.3.2  | npm  | /package-lock.json  | github:language:javascript  | [GHSA-x6fg-f45m-jf5q](https://github.com/advisories/GHSA-x6fg-f45m-jf5q)  |\n"
+              },
+              "properties": {
+                "security-severity": "7.5"
+              }
+            },
+            {
+              "id": "GHSA-xwcq-pm8m-c4vf-crypto-js",
+              "name": "JavascriptMatcherExactDirectMatch",
+              "shortDescription": {
+                "text": "GHSA-xwcq-pm8m-c4vf critical vulnerability for crypto-js package"
+              },
+              "fullDescription": {
+                "text": "crypto-js PBKDF2 1,000 times weaker than specified in 1993 and 1.3M times weaker than current standard"
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability GHSA-xwcq-pm8m-c4vf\nSeverity: critical\nPackage: crypto-js\nVersion: 3.3.0\nFix Version: 4.2.0\nType: npm\nLocation: /package-lock.json\nData Namespace: github:language:javascript\nLink: [GHSA-xwcq-pm8m-c4vf](https://github.com/advisories/GHSA-xwcq-pm8m-c4vf)",
+                "markdown": "**Vulnerability GHSA-xwcq-pm8m-c4vf**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| critical  | crypto-js  | 3.3.0  | 4.2.0  | npm  | /package-lock.json  | github:language:javascript  | [GHSA-xwcq-pm8m-c4vf](https://github.com/advisories/GHSA-xwcq-pm8m-c4vf)  |\n"
+              },
+              "properties": {
+                "security-severity": "9.1"
+              }
+            }
+          ]
+        }
+      },
+      "results": [
+        {
+          "ruleId": "GHSA-3h5v-q93c-6h6q-ws",
+          "message": {
+            "text": "A high vulnerability in npm package: ws, version 8.13.0 was found at: /package-lock.json"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/package-lock.json"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "692c06590eee55ffb72e61827e9405b7455874310865bb61103b4b0ca853c6e3:1"
+          }
+        },
+        {
+          "ruleId": "GHSA-4vvj-4cpr-p986-webpack",
+          "message": {
+            "text": "A medium vulnerability in npm package: webpack, version 5.93.0 was found at: /package-lock.json"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/package-lock.json"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "e50b48a11ad6fdca483b7dc96faa07384a75b35996ae19080ba91def496799bd:1"
+          }
+        },
+        {
+          "ruleId": "GHSA-776f-qx25-q3cc-xml2js",
+          "message": {
+            "text": "A medium vulnerability in npm package: xml2js, version 0.4.23 was found at: /package-lock.json"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/package-lock.json"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "54f4c1fe38b90b444b9e1aa522dfa8f8ed076d75f52fafc4a4c0ca235d959085:1"
+          }
+        },
+        {
+          "ruleId": "GHSA-7fh5-64p2-3v2j-postcss",
+          "message": {
+            "text": "A medium vulnerability in npm package: postcss, version 8.4.14 was found at: /package-lock.json"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/package-lock.json"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "956d5bf6b9d8064d2eb0513b16690d756d03c6c40de6ee3f2781d02eba1ebc0e:1"
+          }
+        },
+        {
+          "ruleId": "GHSA-952p-6rrq-rcjv-micromatch",
+          "message": {
+            "text": "A medium vulnerability in npm package: micromatch, version 4.0.7 was found at: /package-lock.json"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/package-lock.json"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "e193f65db7fea99e28e6218080bb94a1b988594c0ce29b91becce87488ba429b:1"
+          }
+        },
+        {
+          "ruleId": "GHSA-9wv6-86v2-598j-path-to-regexp",
+          "message": {
+            "text": "A high vulnerability in npm package: path-to-regexp, version 0.1.7 was found at: /package-lock.json"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/package-lock.json"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "2939957925ffa1e4f7719bc17ff6d27b026040ac261b50e5a72989167da8bf71:1"
+          }
+        },
+        {
+          "ruleId": "GHSA-c2qf-rxjj-qqgw-semver",
+          "message": {
+            "text": "A high vulnerability in npm package: semver, version 2.3.2 was found at: /package-lock.json"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/package-lock.json"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "612e360ce296c63deb8bc5d8ba09cfb026d3380bb7614ed95003b389283b21df:1"
+          }
+        },
+        {
+          "ruleId": "GHSA-c59h-r6p8-q9wc-next",
+          "message": {
+            "text": "A low vulnerability in npm package: next, version 12.3.3 was found at: /package-lock.json"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/package-lock.json"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "dd58a2f5707bbba318446bf48059e4c28b630d9bbc310db47d2cd485d0dc8236:1"
+          }
+        },
+        {
+          "ruleId": "GHSA-cchq-frgv-rjh5-vm2",
+          "message": {
+            "text": "A critical vulnerability in npm package: vm2, version 3.9.19 was found at: /package-lock.json"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/package-lock.json"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "6a1eec5bbaef98483b0c695729e13d349f28d4302d1fe6d16893069c59baeb2c:1"
+          }
+        },
+        {
+          "ruleId": "GHSA-cf4h-3jhx-xvhq-underscore",
+          "message": {
+            "text": "A critical vulnerability in npm package: underscore, version 1.6.0 was found at: /package-lock.json"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/package-lock.json"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "b796cea3536ba9f9f8c30468feb64b4dbf3c997befdd15e193fe22f55a3024d5:1"
+          }
+        },
+        {
+          "ruleId": "GHSA-cm22-4g7w-348p-serve-static",
+          "message": {
+            "text": "A medium vulnerability in npm package: serve-static, version 1.15.0 was found at: /package-lock.json"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/package-lock.json"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "e3834ceec9a992f95ade1bffb93b073ea8d2327d124fb2a31caffec71ef37424:1"
+          }
+        },
+        {
+          "ruleId": "GHSA-f6v4-cf5j-vf3w-dset",
+          "message": {
+            "text": "A high vulnerability in npm package: dset, version 3.1.3 was found at: /package-lock.json"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/package-lock.json"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "2bb8029fb7768a2388ec69f2b0f53740ad1ee87e448e65b469d2fd276feef787:1"
+          }
+        },
+        {
+          "ruleId": "GHSA-f8q6-p94x-37v3-minimatch",
+          "message": {
+            "text": "A high vulnerability in npm package: minimatch, version 3.0.4 was found at: /package-lock.json"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/package-lock.json"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "0be6a09c9e29a6716e2c2bc0442c987012cb39d99b6e266e9486dac04e2c4e99:1"
+          }
+        },
+        {
+          "ruleId": "GHSA-g644-9gfx-q4q4-vm2",
+          "message": {
+            "text": "A critical vulnerability in npm package: vm2, version 3.9.19 was found at: /package-lock.json"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/package-lock.json"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "6a1eec5bbaef98483b0c695729e13d349f28d4302d1fe6d16893069c59baeb2c:1"
+          }
+        },
+        {
+          "ruleId": "GHSA-gcx4-mw62-g8wm-rollup",
+          "message": {
+            "text": "A high vulnerability in npm package: rollup, version 3.2.5 was found at: /package-lock.json"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/package-lock.json"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "3d51bd66e61652ff375bfa6204a5f76ff068f3d8968ea19ff148ec202f7b584f:1"
+          }
+        },
+        {
+          "ruleId": "GHSA-m6fv-jmcg-4jfg-send",
+          "message": {
+            "text": "A medium vulnerability in npm package: send, version 0.18.0 was found at: /package-lock.json"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/package-lock.json"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "53fca806a609a493f8d30fe432d0067ef4db9b4fdc1bbd721caad5fa52124b36:1"
+          }
+        },
+        {
+          "ruleId": "GHSA-mpg4-rc92-vx8v-fast-xml-parser",
+          "message": {
+            "text": "A high vulnerability in npm package: fast-xml-parser, version 4.2.5 was found at: /package-lock.json"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/package-lock.json"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "3dba34297cfed2c6a1c85bc659c9d355c44b31122910409f197fb61e1b121d49:1"
+          }
+        },
+        {
+          "ruleId": "GHSA-pfrx-2q88-qq97-got",
+          "message": {
+            "text": "A medium vulnerability in npm package: got, version 9.6.0 was found at: /package-lock.json"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/package-lock.json"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "677706e2c84cd6dfb855b123e8a34db12a8f4eeb5df5b8ab253aa5299b80da0b:1"
+          }
+        },
+        {
+          "ruleId": "GHSA-pp7h-53gx-mx7r-bl",
+          "message": {
+            "text": "A medium vulnerability in npm package: bl, version 0.8.2 was found at: /package-lock.json"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/package-lock.json"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "182708d80ad226db1ccaf8a9438368d8e835bb533c79b9360092f9af48a66d1a:1"
+          }
+        },
+        {
+          "ruleId": "GHSA-qw6h-vgh9-j6wx-express",
+          "message": {
+            "text": "A medium vulnerability in npm package: express, version 4.19.2 was found at: /package-lock.json"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/package-lock.json"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "b9d4ae67ef923310933fe9aab071b9ab3be8037d91b2c8fd388125266d442458:1"
+          }
+        },
+        {
+          "ruleId": "GHSA-qwcr-r2fm-qrc7-body-parser",
+          "message": {
+            "text": "A high vulnerability in npm package: body-parser, version 1.20.2 was found at: /package-lock.json"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/package-lock.json"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "0808ad49c075bba2a413e203e278860c23d2df45e6d11a9372a10dbe3209e81c:1"
+          }
+        },
+        {
+          "ruleId": "GHSA-r4pf-3v7r-hh55-app-builder-lib",
+          "message": {
+            "text": "A high vulnerability in npm package: app-builder-lib, version 23.0.2 was found at: /package-lock.json"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/package-lock.json"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "1131298dddceb77279c2877fe488e55679cc99c30037e677bbdacb4ac0413ef0:1"
+          }
+        },
+        {
+          "ruleId": "GHSA-wf5p-g6vw-rhxx-axios",
+          "message": {
+            "text": "A medium vulnerability in npm package: axios, version 0.27.2 was found at: /package-lock.json"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/package-lock.json"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "8b4c8624a9feab3c8f0478464fa475f3a3af4a9fd443e40cd77b22ed165198ad:1"
+          }
+        },
+        {
+          "ruleId": "GHSA-wgrm-67xf-hhpq-pdfjs-dist",
+          "message": {
+            "text": "A high vulnerability in npm package: pdfjs-dist, version 3.11.174 was found at: /package-lock.json"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/package-lock.json"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "694939aa1e25b7d437088973d531170a3cead343e29e591ceec4bf27523e8d82:1"
+          }
+        },
+        {
+          "ruleId": "GHSA-wrw9-m778-g6mc-bl",
+          "message": {
+            "text": "A medium vulnerability in npm package: bl, version 0.8.2 was found at: /package-lock.json"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/package-lock.json"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "182708d80ad226db1ccaf8a9438368d8e835bb533c79b9360092f9af48a66d1a:1"
+          }
+        },
+        {
+          "ruleId": "GHSA-x6fg-f45m-jf5q-semver",
+          "message": {
+            "text": "A high vulnerability in npm package: semver, version 2.3.2 was found at: /package-lock.json"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/package-lock.json"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "612e360ce296c63deb8bc5d8ba09cfb026d3380bb7614ed95003b389283b21df:1"
+          }
+        },
+        {
+          "ruleId": "GHSA-xwcq-pm8m-c4vf-crypto-js",
+          "message": {
+            "text": "A critical vulnerability in npm package: crypto-js, version 3.3.0 was found at: /package-lock.json"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/package-lock.json"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "015f9a4e3115ee3558462da1419d6b31d590ece24bad7b86ccbd70d546782152:1"
+          }
+        }
+      ]
+    }
+  ]
+}
